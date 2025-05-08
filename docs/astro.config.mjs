@@ -6,19 +6,31 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'DATA GATEWAYS LLC',
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/DATAGATEWAYS' },
+				{ icon: 'x.com', label: 'X.COM', href: 'https://x.com/PORTERSXYZ' },
+				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/datagateways/' },
+				{ icon: 'farcaster', label: 'Farcaster', href: 'https://warpcast.com/porters' },
+
+
+			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'About',
+
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Introduction', slug: 'about/mission' },
+						{ label: 'Contact us', slug: 'about/contact' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Projects',
+					autogenerate: { directory: 'projects' },
+				},
+				{
+					label: 'Origins',
+					autogenerate: { directory: 'origins' },
 				},
 			],
 		}),
