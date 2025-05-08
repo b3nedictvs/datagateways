@@ -21,7 +21,7 @@ export default defineConfig({
 
 					items: [
 						{ label: 'Introduction', slug: 'about/mission' },
-						{ label: 'Contact us', slug: 'about/contact' },
+						{ label: 'Contact Us', slug: 'about/contact' },
 					],
 				},
 				{
